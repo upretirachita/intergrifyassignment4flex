@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Lets's Talk</h2>
+        <h4>Think you have what it takes?Show us.</h4>
+        <h3>1.Personal Information</h3>
+        <div class="personalinformation1">
+            <div class="name">
+                    <input id="fullname" type="text" name="fullname" placeholder="Full Name"  required pattern="[A-Z]{1}[a-zA-Z]{3,10}[ -][A-Z][a-zA-Z]{2,10}"/>
+                            
+            </div>
+            <div class="phone">
+                    <input id="phonenumber" type="text" name="phonenumber" placeholder="Phone number" required pattern="[0-9]{10}" />
+                           
+            </div>
+        </div>
+        <div class="personalinformation2">
+            <div class="email">
+                    <input type="email"   placeholder="Email" required />
+            </div>
+
+            <div class="email1">
+                <input type="email"placeholder="Re-enter Email*" required />
+            </div>
+        </div>
+        <div class="personalinformation3">
+            <div class="address">
+                <input id="address" type="text" name="address" placeholder="Address" required pattern="[A-Z]{1}[a-zA-Z]{2,15}" /> 
+                        
+            </div>
+        </div>
+        <div class="personalinformation4">
+            <div class="city">
+                    <input id="city" type="text" name="city" placeholder="City*" required pattern="[A-Z]{1}[a-zA-Z]{3,15}" />
+           </div>
+            <div class="state">
+                    <input id="state" type="text" name="state" placeholder="State" value=""  />
+          </div>
+            <div class="countryregion">
+                    <input id="country-region" type="text" name="country-region" placeholder="Country-region" value="" />
+           </div>
+            <div class="zippostalcode">
+                    <input id="zip-code" type="text" name="zip-code" placeholder="Zip-code" value="" required pattern="[0-9]{5}" />
+           </div>
+        </div>
+        <h3>2.Skills and Location</h3>
+        <p>Which is your primary design desclipine?</p>
+        <div class="skillandlocation">
+                
+                <div class="col-md-3 research">
+                        <input type="radio" name="research" id="designresearch" value="designresearch">
+                        <label for="designresearch">Design Research</label>
+
+                    </div>
+                    <div class="col-md-3 research">
+                        <input type="radio" name="research" id="visualdesign" value="visualdesign">
+                        <label for="visualdesign"> Visual Design</label>
+                        
+
+                    </div>
+                    <div class="col-md-3 research">
+                        <input type="radio" name="research" id="uxdesign" value="uxdesign">
+                        <label for="uxdesign"> UX-Design </label>
+                        
+                    </div>
+                    <div class="col-md-3 research">
+                        <input type="radio" name="research" id="frontenddeveloper" value="frontenddeveloper">
+                        <label for="frontenddeveloper"> Front-end Dev</label>
+          
+
+                    </div>
+        </div>
+        
+        <div class="skillandlocation2">
+           <div class="skillandlocationchild1">
+                <h5>DO you have experience with other desclipine?</h5>
+                <label class="containercheck">Visual Design
+                        <input type="checkbox" checked="checked" name="" id="visualdesign" value="visualdesign">
+                        <span class="checkmark"></span>
+                      </label>
+                    
+                    <br/>
+                    <label class="containercheck">UX-Design
+                        <input type="checkbox"  name="" id="uxdesign" value="uxdesign">
+                        <span class="checkmark"></span>
+                      </label>
+                    
+                    <br/>
+                    <label class="containercheck">Front-end Developer
+                        <input type="checkbox"  name="" id="frontend-developer" value="frontend-developer">
+                        <span class="checkmark"></span>
+                      </label>
+           </div>
+           <div class="skillandlocationchild2">
+                <h5>Where are you interested in working?</h5>
+                <p>You must legally authorized to work without visa <br/></p><p> sponser in the location you choose</p>
+                <label class="containercheck">Austin, Texas
+                        <input type="checkbox" checked="checked" name="" id="value="austintexas" value="value="austintexas">
+                        <span class="checkmark"></span>
+                      </label>
+                    
+                    <br/>
+                    <label class="containercheck">Newyork, Newyork
+                        <input type="checkbox" name="" id="newyork"value="newyork" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Toronto, Canada
+                        <input type="checkbox" name="" id="torntocanada"value="torntocanada" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Shangai, China
+                        <input type="checkbox" name="" id="shangaichaina"value="shangaichaina" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Dublin Ireland
+                        <input type="checkbox"  name="" id="dublinireland"value="dublinireland" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Hursley,UnitedKingdom
+                        <input type="checkbox"  name="" id="hursleyunitedkingdom"value="hursleyunitedkingdom" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Boemlingen,Germeny
+                        <input type="checkbox"  name="" id="boemlingengermeny"value="boemlingengermeny" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>
+                      <label class="containercheck">Somewhere Else
+                        <input type="checkbox"  name="" id="somewhereelse"value="somewhereelse" >
+                        <span class="checkmark"></span>
+                      </label>
+                      <br/>               
+           </div>
+
+        </div>
+        <h3>3.Portfolio</h3>
+        <div class="portfolio">
+                <p>Prove you are IBM's next great designerby showing us who you are.What you have done. How you
+                        think.Tell us your story.</p>
+                        <div class="form-group">
+                                <input type="link" placeholder="Portfolio Link*" required>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                  </div>
+                            </div>
+                            <input type="submit" value="Submit" />
+        </div>
+    </div>
+</body>
+
+</html>
